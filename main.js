@@ -29,38 +29,92 @@ const  correctAnswer = document.getElementById('correct-answer'), // number of c
        btnTryAgain = document.getElementById('btn-try-again') // button try again
 
 
-const questions = [
-    {
-        question: 'Как в JavaScripte вычислить процент от числа?',
-        options:[
-            'Так в JavaScripte нельзя сделать',
-            'Оператор : %',
-            'Умножить на кол-во процентов и разделить на 100',
-            'Вызать метод findPrecent()'
-        ],
-        rightAnswer: 2
-    },
-    {
-        question: 'Результат выражения "13" +7',
-        options:[
-            '20',
-            '137',
-            'undefined',
-            'error',
-        ],
-        rightAnswer: 1
-    },
-    {
-        question: 'На JavaScripte нельзя писать;',
-        options:[
-            'Игры',
-            'Скрипты для сайтов',
-            'Десктопные приложения',
-            'Плохо'
-        ],
-        rightAnswer: 3
-    },
-];
+       const questions = [
+        {
+            question: 'Где верно указан вывод данных?',
+            options:[
+                'write("Hello");',
+                'console.log("Hello");',
+                'documentWrite("Hello");',
+                'print(Hello);'
+            ],
+            rightAnswer: 1
+        },
+        {
+            question: 'Какая переменная записана неверно?',
+            options:[
+                'var number = 12,5;',
+                'var b = false',
+                'var isDone = 0;',
+                'var num = "STRING";',
+            ],
+            rightAnswer: 0
+        },
+        {
+            question: 'Какие значения можно хранить в переменных?',
+            options:[
+                'Строки, числа с точкой и простые числа',
+                'Только числа и строки',
+                'Строки, числа с точкой, простые числа и булевые выражения',
+                'Переменнная ничего не хранит'
+            ],
+            rightAnswer: 2
+        },
+        {
+            question: 'Где верно указан запуск всплывающего окна?',
+            options:[
+                'new alert ("Hi")',
+                'Нет верных вариантов',
+                'alert ("Hi")',
+                'info ("Hi")'
+            ],
+            rightAnswer: 2
+        },
+        {
+            question: 'В чем разница между confirm и prompt?',
+            options:[
+                'prompt вызывает диалоговое окно с полем для ввода, confirm - окно с подтверждением',
+                'confirm вызывает диалоговое окно с полем для ввода, prompt - окно с подтверждением',
+                'Они ничем не отличаются',
+                'Это функции не из JS'
+            ],
+            rightAnswer: 0
+        },
+        {
+            question: 'Какие циклы есть в языке JavaScript?',
+            options:[
+                'for, forMap, foreach, while',
+                'for, while, do while, foreach',
+                'for, while, do while',
+                'for, forMap, foreach, while, do while'
+            ],
+            rightAnswer: 2
+        },
+        {
+            question: 'Где верно указано имя переменной?',
+            options:[
+                'ver num;',
+                'const num_1',
+                'let 2num',
+                'const num-1'
+            ],
+            rightAnswer: 1
+        },
+        {
+            question: `Какое количество сообщений будет выведено в консоль?
+            for(var i = 10; i < 35; i += 5) {
+               console.log(i);
+            }`,
+            options:[
+                '25',
+                'Такой цикл работать не будет',
+                '6',
+                '5'
+            ],
+            rightAnswer: 3
+        }
+    
+    ];
 
 
 numberOfAllQuestions.innerHTML =  questions.length; // displaying the number of questions
